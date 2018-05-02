@@ -1,30 +1,30 @@
 using System;
 using static System.Console;
 
-namespace harjoitus1
+namespace A1_T2
 {
     class Program
     {
-        public static void TulostaKolmio(int koko)
+        public static void PrintTriangle(int size)
         {
-            for (int i = 0; i < koko; i++)
+            for (int i = 0; i < size; i++)
             {
-                TulostaTyhjaa(koko - i);
-                TulostaTahtia(i + 1);
+                PrintSpaces(size - i);
+                PrintStars(i + 1);
             }
             ReadKey();
         }
 
-        public static void TulostaTyhjaa(int maara)
+        public static void PrintSpaces(int amount)
         {
-            for (int i = 0; i < maara; i++)
+            for (int i = 0; i < amount; i++)
             {
                 Write(" ");
             }
-            maara++;
+            amount++;
         }
 
-        public static void TulostaTahtia(int lkm)
+        public static void PrintStars(int lkm)
         {
             for (int j = 0; j < lkm; j++)
             {
@@ -36,7 +36,7 @@ namespace harjoitus1
 
         static void Main(string[] args)
         {
-            TulostaKolmio(4);
+            PrintTriangle(4);
         }
     }
 }
