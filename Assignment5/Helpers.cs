@@ -35,7 +35,7 @@ namespace Helpers
             }
             else
             {
-                throw new Exception("Input is not a valid integer..");
+                throw new Exception("Input is not a valid integer.");
             }
         }
 
