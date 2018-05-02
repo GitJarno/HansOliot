@@ -1,0 +1,42 @@
+using System;
+using static System.Console;
+
+namespace harjoitus1
+{
+    class Program
+    {
+        public static void TulostaKolmio(int koko)
+        {
+            for (int i = 0; i < koko; i++)
+            {
+                TulostaTyhjaa(koko - i);
+                TulostaTahtia(i + 1);
+            }
+            ReadKey();
+        }
+
+        public static void TulostaTyhjaa(int maara)
+        {
+            for (int i = 0; i < maara; i++)
+            {
+                Write(" ");
+            }
+            maara++;
+        }
+
+        public static void TulostaTahtia(int lkm)
+        {
+            for (int j = 0; j < lkm; j++)
+            {
+                Write("*");
+            }
+            WriteLine();
+            lkm--;
+        }
+
+        static void Main(string[] args)
+        {
+            TulostaKolmio(4);
+        }
+    }
+}
