@@ -2,7 +2,7 @@ using System;
 using static System.Console;
 
 /*Missing redundancy*/
-namespace Harjoitus4_Tehtava4_5
+namespace Elevator
 {
     class Program
     {
