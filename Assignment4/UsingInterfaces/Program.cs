@@ -1,7 +1,7 @@
 using System;
 using static System.Console;
 
-namespace Harjoitus4_Tehtava1
+namespace UsingInterfaces
 {
     class Program
     {
